@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Barbieri">
+    <meta name="description" content="Calculadora">
+<title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1 class="Titulo">La Calculadora que Calcula</h1>
+        <p class="Parrafo">Esta calculadora calcula operaciones aritmeticas. Entre ellas; suma, resta, multiplicación y división.
+            Una calculadora es un dispositivo que se utiliza para realizar cálculos aritméticos. Aunque las calculadoras modernas se incorporan a menudo en un ordenador de propósito general, se diseñan para realizar ciertas operaciones para que sean más flexibles. Por ejemplo, existen calculadoras gráficas especializadas en campos matemáticos gráficos como la trigonometría y la estadística. También suelen ser más portátiles que la mayoría de los computadores, si bien algunas PDAs tienen tamaños similares a los modelos típicos de calculadora.
+
+En el pasado, se utilizaban como apoyo al trabajo numérico ábacos, comptómetros, ábacos neperianos, tablas matemáticas, reglas de cálculo y máquinas de sumar. El término «calculador» se usaba para aludir a la persona que ejercía este trabajo, ayudándose también de papel y lápiz. Este proceso de cálculo semimanual era tedioso y proclive a errores. Actualmente, las calculadoras son electrónicas y son fabricadas por numerosas empresas en tamaños y formas variados. Se pueden encontrar desde modelos muy baratos del tamaño de una tarjeta de crédito hasta otros más costosos con una impresora incorporada.
+        </p>
+        <div>
+            <p class="p">
+                Si te Interesa la historia de la calculadora te dejo un link, para que puedas conocer más sobre ella.<br>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8Oz9eFAZ-tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </div>
+        <div>
+            <h1 class="calcular">A calcular</h1>
+        </div>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="col-2" onclick="display.borrarTodo()">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">X</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+    </div>
+    <footer>
+        Algunos derechos reservados al autor: Juan Ignacio Barbieri
+        
+    </footer>
+</body>
+</html>
